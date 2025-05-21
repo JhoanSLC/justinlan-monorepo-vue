@@ -3,10 +3,12 @@ import "../styles/global.css"
 import HeroSection from "../components/Navbar.vue"
 import BaseLayout from "../layouts/BaseLayout.astro"
 import HeroLayout from "../layouts/HeroLayout.vue"
+import MusicCarousel from "../components/MusicCarousel.vue"
 ---
 
 <BaseLayout title="Inicio">
     <HeroLayout client:load >
         <HeroSection client:load />
     </HeroLayout>
+    <MusicCarousel client:load />
 </BaseLayout>
