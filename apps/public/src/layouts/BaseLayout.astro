@@ -1,0 +1,14 @@
+---
+// src/layouts/BaseLayout.astro
+const { title = "Mon site" } = Astro.props;
+---
+
+<html lang="fr" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{title}</title>
+    </head>
+    <body class="min-h-screen bg-gray-900 text-black">
+        <slot />
+    </body>
+</html>
